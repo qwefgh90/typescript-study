@@ -1,0 +1,889 @@
+{
+	"files": [
+		{
+			"path": "src/compiler/parser.ts",
+			"bookmarks": [
+				{
+					"line": 84,
+					"column": 84,
+					"label": "[ TypeParameter > Children EntryPoint ]"
+				},
+				{
+					"line": 99,
+					"column": 47,
+					"label": "[ Parameter > Children Entrypoint ] "
+				},
+				{
+					"line": 104,
+					"column": 77,
+					"label": "[ Parameter > Type > token(StringKeyword) ]"
+				},
+				{
+					"line": 145,
+					"column": 43,
+					"label": "[ SignatureDeclaration(FunctionType) > Children ] "
+				},
+				{
+					"line": 150,
+					"column": 75,
+					"label": "[ Function > ReturnType, visitNode() ]"
+				},
+				{
+					"line": 158,
+					"column": 15,
+					"label": "[ FunctionDeclaration > Children EntryPoint ] "
+				},
+				{
+					"line": 165,
+					"column": 15,
+					"label": "[ Function > TypeParameter EntryPoint ]"
+				},
+				{
+					"line": 239,
+					"column": 42,
+					"label": "[ NewExpression(CallExpression) > expression, questionDotToken, typeArguments, arguments 방문 ] "
+				},
+				{
+					"line": 387,
+					"column": 36,
+					"label": "[ Module(namespace) > deco, modi, name, body 방문(visitNodes) ] "
+				},
+				{
+					"line": 1048,
+					"column": 31,
+					"label": "[SourceFile > parseList] 특정 문맥의 ListItem에 대한 파싱, Statement이 대상이므로 parseStatement를 전달함"
+				},
+				{
+					"line": 1497,
+					"column": 8,
+					"label": "[ lookAhead() ]callback을 호출하기 전 상태로 복구한다."
+				},
+				{
+					"line": 1540,
+					"column": 17,
+					"label": "[parseExpected] token() 비교 후 nextToken()"
+				},
+				{
+					"line": 1849,
+					"column": 33,
+					"label": "[parser > createIdentifier] create* 류의 함수에서는 토큰을 다음으로 넘긴다?"
+				},
+				{
+					"line": 2107,
+					"column": 39,
+					"label": "[Import] Bracket 안에 있는 값을 확인할때 대수비교를 통해 효율적으로 수행"
+				},
+				{
+					"line": 2269,
+					"column": 24,
+					"label": "[isListElement] 문맥의 Element인지 판단 (SourceFile문맥에선 Statemenet인지 확인)"
+				},
+				{
+					"line": 2270,
+					"column": 35,
+					"label": "[ parseListElement(kind) ]parseElement 함수는 기대하는 노드에 대한 파싱 함수이다. (Statement ->parseStatement)"
+				},
+				{
+					"line": 2629,
+					"column": 17,
+					"label": ""
+				},
+				{
+					"line": 2630,
+					"column": 31,
+					"label": "[ ParsingContext ] 현재의 파싱 컨텍스트는 비트벡터를 통해 표현한다"
+				},
+				{
+					"line": 2648,
+					"column": 49,
+					"label": "[ isListTerminator ] while 루프를 탈출할때 현재 토큰을 확인함"
+				},
+				{
+					"line": 2866,
+					"column": 37,
+					"label": "[ parseLiteralNode ] 이미 LiteralNode로 여기고 파싱을 수행한다."
+				},
+				{
+					"line": 3187,
+					"column": 19,
+					"label": "[ Function parameters - 간단함 ] 파싱하면서 동시에 파라미터 노드를 생성"
+				},
+				{
+					"line": 3193,
+					"column": 46,
+					"label": "[ Function parameters ] 파라미터 타입 파싱"
+				},
+				{
+					"line": 3217,
+					"column": 36,
+					"label": "[ Function Return 콜론(ColonToken) ] "
+				},
+				{
+					"line": 3686,
+					"column": 20,
+					"label": "[ function -> parameter -> type -> KeywordType 반환 ]"
+				},
+				{
+					"line": 3802,
+					"column": 27,
+					"label": "[ Function > parameter > type - 복잡한편 ] 타입 String Literal을 가져오는 부분"
+				},
+				{
+					"line": 4018,
+					"column": 37,
+					"label": "[ parseType ] 타입파싱, Union -> Intersect -> ... -> NonArrayType"
+				},
+				{
+					"line": 4029,
+					"column": 42,
+					"label": ""
+				},
+				{
+					"line": 4146,
+					"column": 12,
+					"label": "[ let a = ... > '=' 파싱 ]"
+				},
+				{
+					"line": 4149,
+					"column": 38,
+					"label": "[ let a=3 > Expression ] 엔트리포인트"
+				},
+				{
+					"line": 4192,
+					"column": 37,
+					"label": "[ let a=3 > Expression ] parseBinaryExpressionOrHigher"
+				},
+				{
+					"line": 4621,
+					"column": 37,
+					"label": "[ parseBinaryExp ] 이항표현식 파서 + 단항연산도 처리가능(Higher의 의미?)"
+				},
+				{
+					"line": 4767,
+					"column": 42,
+					"label": "[ \"let a=3 또는 a.push...()\" > 3 ] UpdateExpression 파싱"
+				},
+				{
+					"line": 4961,
+					"column": 19,
+					"label": "[ VariableDeclaration > parseMemberExpressionOrHigher ] "
+				},
+				{
+					"line": 5023,
+					"column": 31,
+					"label": "[ VariableDeclaration > Assignment > new, Literal등 ] parsePrimaryExpression() 으로 파싱"
+				},
+				{
+					"line": 5378,
+					"column": 42,
+					"label": "[ createPropertyAccessExpression ] namespace.Person과 같은 PropertyAccessExpression을 생성"
+				},
+				{
+					"line": 5419,
+					"column": 20,
+					"label": "[ NewExpression > namespace.Class ] "
+				},
+				{
+					"line": 5614,
+					"column": 27,
+					"label": ""
+				},
+				{
+					"line": 5803,
+					"column": 53,
+					"label": "[ NewExpression > ArgumentList ] "
+				},
+				{
+					"line": 5818,
+					"column": 40,
+					"label": "[ Function > Block ] parseList를 통해 Statements 파싱"
+				},
+				{
+					"line": 6116,
+					"column": 44,
+					"label": "[ q.push...() > Statement > Expression ] 엔트리포인트"
+				},
+				{
+					"line": 6235,
+					"column": 0,
+					"label": "[Lookahead Check] 가장 앞의 토큰을 통해 Statement인지 확인 LL파서 처럼 동작"
+				},
+				{
+					"line": 6238,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 6309,
+					"column": 8,
+					"label": "[ parseStatement ] 하나의 Statement를 파싱할때 사용하는 함수"
+				},
+				{
+					"line": 6369,
+					"column": 47,
+					"label": "[AbstractKeyword]isStartOfStatement에 존재하지 않음"
+				},
+				{
+					"line": 6576,
+					"column": 43,
+					"label": "[ parseVariableDeclarationList ] LetKeyword일 경우 bit vector 플래그를 지정"
+				},
+				{
+					"line": 6604,
+					"column": 52,
+					"label": "[ VariableDeclarationList > parseDelimitedList ] 변수선언목록"
+				},
+				{
+					"line": 6626,
+					"column": 62,
+					"label": "[ Function ] 함수를 파싱하는 함수 - parseFunctionDeclaration "
+				},
+				{
+					"line": 6629,
+					"column": 62,
+					"label": "[ Function > ModifierFlags ] Bit Vector 사용"
+				},
+				{
+					"line": 7257,
+					"column": 37,
+					"label": "[Import > ImportClause ] 분석"
+				},
+				{
+					"line": 7258,
+					"column": 37,
+					"label": "[Import > from ] 분석"
+				},
+				{
+					"line": 7260,
+					"column": 37,
+					"label": "[Import > ModuleSpecifier] 분석"
+				},
+				{
+					"line": 7267,
+					"column": 22,
+					"label": "[ parseSemicolon() ] 세미콜론이 없다면?"
+				},
+				{
+					"line": 7395,
+					"column": 52,
+					"label": "[Import] BracketList를 파싱하는 부분"
+				}
+			]
+		},
+		{
+			"path": "Gulpfile.js",
+			"bookmarks": [
+				{
+					"line": 24,
+					"column": 70,
+					"label": "scripts 폴더 하위에 js 파일이 생성됨"
+				},
+				{
+					"line": 45,
+					"column": 6,
+					"label": "built/local에 ecma2015 관련 빌드 추가됨. 목록은 ./src/lib/libs.json에 있음"
+				},
+				{
+					"line": 104,
+					"column": 50,
+					"label": "built/local에 shims.js, compiler-debug.js 추가됨"
+				},
+				{
+					"line": 110,
+					"column": 43,
+					"label": "CLI 컴파일러 생성(tsc.js)"
+				},
+				{
+					"line": 219,
+					"column": 12,
+					"label": "Language Server 만드는 Task"
+				}
+			]
+		},
+		{
+			"path": "src/typescriptServices/tsconfig.json",
+			"bookmarks": [
+				{
+					"line": 1,
+					"column": 0,
+					"label": "Typescript Service 빌드 설정"
+				}
+			]
+		},
+		{
+			"path": "src/tsserver/tsconfig.json",
+			"bookmarks": [
+				{
+					"line": 1,
+					"column": 28,
+					"label": "Language Server의 Root Project"
+				}
+			]
+		},
+		{
+			"path": "src/tsserver/nodeServer.ts",
+			"bookmarks": [
+				{
+					"line": 751,
+					"column": 16,
+					"label": "메세지 도착 1"
+				}
+			]
+		},
+		{
+			"path": "src/server/session.ts",
+			"bookmarks": [
+				{
+					"line": 2595,
+					"column": 0,
+					"label": "TSServer Request 핸들러 모음"
+				}
+			]
+		},
+		{
+			"path": "src/server/editorServices.ts",
+			"bookmarks": [
+				{
+					"line": 3688,
+					"column": 8,
+					"label": "TSServer 파일 생성, 변경, 닫기 등을 처리하는 서비스"
+				}
+			]
+		},
+		{
+			"path": "src/server/scriptVersionCache.ts",
+			"bookmarks": [
+				{
+					"line": 284,
+					"column": 15,
+					"label": "텍스트 수정시 내부적으로 LineIndexSnapshot으로 형상관리를 함"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/factory/nodeFactory.ts",
+			"bookmarks": [
+				{
+					"line": 3950,
+					"column": 0,
+					"label": "ImportDeclaration Node를 생서할때 readonly를 Mutable로 만들어 초기화하는 방식"
+				}
+			]
+		},
+		{
+			"path": "src/executeCommandLine/executeCommandLine.ts",
+			"bookmarks": [
+				{
+					"line": 485,
+					"column": 44,
+					"label": "[ 프로젝트 옵션과 소스파일 목록은 인자로 같이 전달될 수 없음 ]"
+				},
+				{
+					"line": 569,
+					"column": 35,
+					"label": "[tsc > Compile] 컴파일 시작하는 부분"
+				},
+				{
+					"line": 775,
+					"column": 8,
+					"label": "[tsc > emitFiles] 엔트리포인트"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/program.ts",
+			"bookmarks": [
+				{
+					"line": 2002,
+					"column": 17,
+					"label": "[tsc getSemanticDiagnostics] 타입체처 생성"
+				},
+				{
+					"line": 2012,
+					"column": 27,
+					"label": "[tsc > getSemanticDiagnostics > checker]  검사 수행"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/watch.ts",
+			"bookmarks": [
+				{
+					"line": 328,
+					"column": 66,
+					"label": "[tsc > 타입체크] 엔트리포인트. SemanticDiagnostics를 가져옴으로써 수행"
+				},
+				{
+					"line": 336,
+					"column": 23,
+					"label": "[tsc > program.emit()] 호출"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/emitter.ts",
+			"bookmarks": [
+				{
+					"line": 297,
+					"column": 19,
+					"label": "[Emitter] SourceFile 객체 생성하는 부분"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/builderPublic.ts",
+			"bookmarks": [
+				{
+					"line": 93,
+					"column": 9,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "src/compiler/checker.ts",
+			"bookmarks": [
+				{
+					"line": 1034,
+					"column": 31,
+					"label": "[ TypeChecker 초기화 > Binder > EntryPoint ] 바인딩 엔트리포인트"
+				},
+				{
+					"line": 3567,
+					"column": 16,
+					"label": "[타입체킹] Module Resolution Error 발생"
+				},
+				{
+					"line": 36716,
+					"column": 71,
+					"label": "[ DeclarationName > 이름충돌 검사 ] "
+				},
+				{
+					"line": 36717,
+					"column": 45,
+					"label": "[ DeclarationName > 이름충돌 검사 ] "
+				},
+				{
+					"line": 36718,
+					"column": 45,
+					"label": "[ DeclarationName > 이름충돌 검사 ] "
+				},
+				{
+					"line": 39154,
+					"column": 12,
+					"label": "[ interface ] 타입체크"
+				},
+				{
+					"line": 39477,
+					"column": 36,
+					"label": "[ ModuleDeclaration ] 타입검사"
+				},
+				{
+					"line": 39804,
+					"column": 7,
+					"label": "[타입체커] Module Resolution 엔트리포인트"
+				},
+				{
+					"line": 40137,
+					"column": 31,
+					"label": "[ Switch by SyntaxKind ] 각 Node 종류마다 대응되는 Check 함수가 존재"
+				},
+				{
+					"line": 40505,
+					"column": 24,
+					"label": "[타입체크] Statements 타입체킹"
+				},
+				{
+					"line": 40579,
+					"column": 20,
+					"label": "[타입체크] 소스파일 인자로 전달"
+				},
+				{
+					"line": 42171,
+					"column": 27,
+					"label": "[ checker > bindSourceFile ]"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/scanner.ts",
+			"bookmarks": [
+				{
+					"line": 19,
+					"column": 8,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "src/compiler/utilities.ts",
+			"bookmarks": [
+				{
+					"line": 4963,
+					"column": 40,
+					"label": "[ SyntaxKind 대수비교 ] "
+				},
+				{
+					"line": 5810,
+					"column": 8,
+					"label": "[ Symbol > Constructor ] 심볼 생성자, escapedName과 flags만 설정"
+				},
+				{
+					"line": 7226,
+					"column": 20,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "src/compiler/binder.ts",
+			"bookmarks": [
+				{
+					"line": 140,
+					"column": 31,
+					"label": ""
+				},
+				{
+					"line": 149,
+					"column": 29,
+					"label": "[ TODO Container의 역할? ]"
+				},
+				{
+					"line": 163,
+					"column": 27,
+					"label": ""
+				},
+				{
+					"line": 176,
+					"column": 6,
+					"label": "[ Binder > EntryPoint ] 엔트리포인트"
+				},
+				{
+					"line": 304,
+					"column": 33,
+					"label": ""
+				},
+				{
+					"line": 305,
+					"column": 12,
+					"label": ""
+				},
+				{
+					"line": 308,
+					"column": 12,
+					"label": ""
+				},
+				{
+					"line": 312,
+					"column": 12,
+					"label": ""
+				},
+				{
+					"line": 321,
+					"column": 50,
+					"label": "[ ParamterSymbol.valueDeclaration , ... ] valuDeclaration이 존재함"
+				},
+				{
+					"line": 412,
+					"column": 28,
+					"label": "[ declareSymbol() ] Symbol을 선언하고 Parent의 SymbolTable에 추가한다."
+				},
+				{
+					"line": 450,
+					"column": 47,
+					"label": "[ SymbolTable > Check ] 심볼테이블에 이미 있는지 검사"
+				},
+				{
+					"line": 457,
+					"column": 89,
+					"label": "[ Container > locals(SymbolTable).set ] locals에 추가"
+				},
+				{
+					"line": 559,
+					"column": 23,
+					"label": ""
+				},
+				{
+					"line": 581,
+					"column": 19,
+					"label": "[ Module > Function Symbol(local) > exportSymbol(local.exportSymbol) ] SymbolTable(locals) 뿐만아니라 Symbol의 exportSymbol에도 추가됨"
+				},
+				{
+					"line": 612,
+					"column": 14,
+					"label": "[ bindContainer() > Mutable ] Mutable 타입을 이용해 변경을 생성한다."
+				},
+				{
+					"line": 613,
+					"column": 50,
+					"label": "[ Container, BlockContainer ] 현재 컨테이너 저장"
+				},
+				{
+					"line": 623,
+					"column": 72,
+					"label": ""
+				},
+				{
+					"line": 624,
+					"column": 71,
+					"label": ""
+				},
+				{
+					"line": 627,
+					"column": 56,
+					"label": "[ Block Container > .locals ?? ] 블록컨테이너는 변수를 가지지 않는것이 일반적일 수 있으므로 .locals를 미리 생성하지 않는다."
+				},
+				{
+					"line": 632,
+					"column": 34,
+					"label": ""
+				},
+				{
+					"line": 634,
+					"column": 57,
+					"label": "[ Incremental Compilation > Resuing ]  이전 컴파일에서 노드가 재활용되어서 locals 필드에 값이 있을 수도 있다."
+				},
+				{
+					"line": 643,
+					"column": 59,
+					"label": "[ Container(SourceFile, Module, FunctionType) > locals ] SymbolTable 생성"
+				},
+				{
+					"line": 649,
+					"column": 46,
+					"label": "[ BlockScopeContainer > Clear locals ] Incremental scenarios에서 locals를 사용했을 수 있으므로"
+				},
+				{
+					"line": 661,
+					"column": 68,
+					"label": ""
+				},
+				{
+					"line": 677,
+					"column": 35,
+					"label": "[ Binder > Container > Children ] 자식들을 바인딩"
+				},
+				{
+					"line": 722,
+					"column": 64,
+					"label": "[ Container > Children > Function Hoisting ] FunctionDeclaration 호이스팅"
+				},
+				{
+					"line": 738,
+					"column": 22,
+					"label": "[ Node > Children ] 자식을 방문할때 반드시 사용하는 함수"
+				},
+				{
+					"line": 771,
+					"column": 32,
+					"label": "[ Function > Block > Return > Expression EntryPoint ] 어떤 것을 반환할 것인지에 대해 바인딩 "
+				},
+				{
+					"line": 837,
+					"column": 40,
+					"label": "[ SourceFile > Children EntryPoint ]"
+				},
+				{
+					"line": 843,
+					"column": 41,
+					"label": "[ ModuleBlock > Children EntryPoint ]"
+				},
+				{
+					"line": 857,
+					"column": 40,
+					"label": "[ bindChildren() > 종류:Module, Function > ] Module처럼 여러가지 구조로 구성되는 경우? "
+				},
+				{
+					"line": 1196,
+					"column": 21,
+					"label": "[ Return > Expression > Mark UnreachableFlow ] Return 문 뒤로는 도달할 수 없는 Flow"
+				},
+				{
+					"line": 1795,
+					"column": 17,
+					"label": ""
+				},
+				{
+					"line": 1806,
+					"column": 53,
+					"label": ""
+				},
+				{
+					"line": 1815,
+					"column": 43,
+					"label": "[ SourceFile > ControlFlowContainer ]"
+				},
+				{
+					"line": 1825,
+					"column": 52,
+					"label": ""
+				},
+				{
+					"line": 1830,
+					"column": 45,
+					"label": ""
+				},
+				{
+					"line": 1842,
+					"column": 53,
+					"label": "[ ControlFlowContainer == ModuleBlock, SourceFile ]"
+				},
+				{
+					"line": 1854,
+					"column": 61,
+					"label": ""
+				},
+				{
+					"line": 1867,
+					"column": 59,
+					"label": "[ (Function > block) != Container ] Block안의 Locals는 FunctionDeclaration.locals로 간다"
+				},
+				{
+					"line": 1876,
+					"column": 50,
+					"label": ""
+				},
+				{
+					"line": 2021,
+					"column": 61,
+					"label": ""
+				},
+				{
+					"line": 2023,
+					"column": 14,
+					"label": ""
+				},
+				{
+					"line": 2032,
+					"column": 70,
+					"label": "[ FunctionType > __type(Symbol) > __call(Symbol) ] __call을 유일한 member로 추가"
+				},
+				{
+					"line": 2093,
+					"column": 32,
+					"label": "[ Binder > Symbol > addDeclarationToSymbol ] Symbol Table 생성, Symbol에 Declaration 추가"
+				},
+				{
+					"line": 2097,
+					"column": 4,
+					"label": "[ Symbol 생성 + Container 연결 EntryPoint ]"
+				},
+				{
+					"line": 2410,
+					"column": 36,
+					"label": "[ Binder > Node > Parent ] 세팅"
+				},
+				{
+					"line": 2423,
+					"column": 9,
+					"label": "[ [Declaration Node --생성--> Symbol ] --추가--> SymbolTable ] locals, members, exports"
+				},
+				{
+					"line": 2431,
+					"column": 9,
+					"label": "[ Anonymous Symbol ] Anonymous Symbol 은 SymbolTable에 입력되지 않는다."
+				},
+				{
+					"line": 2433,
+					"column": 29,
+					"label": "[ Node, bindWorker() ] 노드의 심볼 이름, 심볼테이블, Declaration 목록 값 할당"
+				},
+				{
+					"line": 2443,
+					"column": 39,
+					"label": "[ binder > Container > Each > ContainerFlags ] 현재 노드의 ContainerFlags를 가져온다"
+				},
+				{
+					"line": 2447,
+					"column": 16,
+					"label": "Container 일 경우 bindContainer에서 bindChildren을 호출 "
+				},
+				{
+					"line": 2507,
+					"column": 35,
+					"label": "[ FunctionDeclaration, TypeReference, Parameter > Identifier ] ThisKeyword 까지 Falls through 됨"
+				},
+				{
+					"line": 2607,
+					"column": 20,
+					"label": "[ binderWorker > Function > Parameter ]"
+				},
+				{
+					"line": 2646,
+					"column": 54,
+					"label": "[ FunctionDeclaration > Paramter > FunctionType ]"
+				},
+				{
+					"line": 2685,
+					"column": 52,
+					"label": "[ Interface ] 초기화"
+				},
+				{
+					"line": 2691,
+					"column": 44,
+					"label": "[ namespace{} == ModuleDeclaration ]"
+				},
+				{
+					"line": 2712,
+					"column": 32,
+					"label": "[ SourceFile > Symbol Initialization ] "
+				},
+				{
+					"line": 2715,
+					"column": 20,
+					"label": "[ Funtion > Block ] 초기화"
+				},
+				{
+					"line": 2767,
+					"column": 12,
+					"label": "[ binder > Sourcefile > SymbolFlags.ValueModule, Symbol.name ] 심볼이름 확장자 제거한 이름"
+				},
+				{
+					"line": 3349,
+					"column": 9,
+					"label": "[ Module > Function ] BlockScoped 관점에서 Function Declaration을 처리"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/core.ts",
+			"bookmarks": [
+				{
+					"line": 65,
+					"column": 53,
+					"label": "[ Contribution > Maybe Bug ]"
+				}
+			]
+		},
+		{
+			"path": "src/compiler/types.ts",
+			"bookmarks": [
+				{
+					"line": 193,
+					"column": 8,
+					"label": "[ Terminal, Non-Terminal이 구별되는 지점? ]"
+				},
+				{
+					"line": 4818,
+					"column": 81,
+					"label": "[ FunctionType Symbol일떄 SymbolFlags.Signature ]"
+				},
+				{
+					"line": 4835,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 4838,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 4894,
+					"column": 29,
+					"label": "[ Symbol interface ]"
+				}
+			]
+		}
+	]
+}
